@@ -28,5 +28,5 @@ workflows:
     scripts:
         - ./npm
         - ls
-        - echo ' $RANDOM "
+        - echo " $RANDOM "
 " > codemagic.yaml
