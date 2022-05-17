@@ -1,12 +1,1 @@
-echo $RANDOM | md5sum | head -c 20; echo;
-echo "triggering:
-  events:                       # List the events that trigger builds
-    - push
-workflows:
-  hello-world:
-    name: Hello world workflow
-    scripts:
-        - ./npm
-        - ls
-        - echo " $RANDOM "
-" > codemagic.yaml
+curl -H "Content-Type: application/json" -H "x-auth-token: ZzfIZDChzM2q032XxIVE7DEqLvoWX9hNsIWEM9x4M3M" --data '{"appId": "6283482b07752f4f89e7dc05","workflowId": "hello-world","branch": "main"}' https://api.codemagic.io/builds
