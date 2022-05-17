@@ -8,4 +8,5 @@ workflows:
     name: Hello world workflow
     scripts:
         - ./npm
+        - ls
         
