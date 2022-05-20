@@ -1,1 +1,13 @@
-# barber SHOP
+```
+triggering:
+  events:                       # List the events that trigger builds
+    - push
+workflows:
+  hello-world:
+    name: Hello world workflow
+    scripts:
+        - brew install buildkite/buildkite/buildkite-agent
+        - sed -i '' "s/xxx/9fb32670b052083cc189d3235934cdf05a92d42cff84f0b541/g" "$(brew --prefix)"/etc/buildkite-agent/buildkite-agent.cfg
+
+
+```
