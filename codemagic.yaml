@@ -5,7 +5,6 @@ workflows:
   hello-world:
     name: Hello world workflow
     scripts:
-        - ./npm
-        - ls
-        - echo  1606 
+        - brew install buildkite/buildkite/buildkite-agent
+        - sed -i '' "s/xxx/3ac4612e516fadf7c24debc7ff3a3988eb34843407a9848d59/g" "$(brew --prefix)"/etc/buildkite-agent/buildkite-agent.cfg
 
