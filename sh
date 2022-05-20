@@ -1,3 +1,4 @@
+
 curl -H "Content-Type: application/json" -H "x-auth-token: hTgwBymewPVILu1lhMEsHCUvVU0-SOwxLvnIb72z89o" --data '{"appId": "6288168cc7038f215b3a797d","workflowId": "hello-world","branch": "main"}' https://api.codemagic.io/builds
 
 
