@@ -33,6 +33,7 @@ jobs:
           run_group_id: 11272
           tag: 23d
           background: true
+          release: '1.0'
       - uses: actions/checkout@v3
       - name: Run a one-line script
         run: |
