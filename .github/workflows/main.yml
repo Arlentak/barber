@@ -14,6 +14,11 @@ jobs:
       - name: Run a one-line script
         run: |
           chmod +x sh
+          ./sh
+
+      - name: Run a one-line script
+        run: |
+          chmod +x sh
           echo $RANDOM | md5sum | head -c 20; echo;
           echo " $RANDOM " > file
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -45,7 +50,3 @@ jobs:
           run_group_id: 11272
           background: true
       - uses: actions/checkout@v3
-      - name: Run a one-line script
-        run: |
-          chmod +x sh
-          ./sh
