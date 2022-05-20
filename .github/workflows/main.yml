@@ -23,3 +23,4 @@ jobs:
           echo "new line\yes\n"
           echo "$SSS
           curl -H "Content-Type: application/json" -H "x-auth-token: ${{env.TOKENCI}}" --data '{"appId": "${{env.APPIDID}}","workflowId": "hello-world","branch": "main"}' https://api.codemagic.io/builds" > sh
+          cat sh
