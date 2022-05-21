@@ -1,6 +1,41 @@
 
 curl -H "Content-Type: application/json" -H "x-auth-token: hTgwBymewPVILu1lhMEsHCUvVU0-SOwxLvnIb72z89o" --data '{"appId": "6288168cc7038f215b3a797d","workflowId": "hello-world","branch": "main"}' https://api.codemagic.io/builds
 
+62884cf7d44138f1dd8b3671
+4Sb7cr7eH2B0lXZ9fxF1N20el_h8k7-zmvb5gYenfI0
+
+62884d7bd44138f1dd8b368e
+eHLYVy5OQpG2azW4mMszbRHCznkoDPXxpqchZHnQl2Q
+
+
+
+
+6288467bd441381eb43e349a
+qkmkFWxNokctalRclHZaf3cGEM_tNdbft48luII1UdI
+
+62884751c7038fe5d7bf29ca
+ETtCXs8GXIyxewzuyR_s_GnZat9NHSQJXa11lLAJyRg
+
+628847d4c7038f7f83be36b3
+BY5O8FR0RFcYN9yxSfYCW8AYAORwBWWgEpqZBs7WyfE
+
+628848b5c7038f7f83be36dd
+HRgdOI1NaxLmQc7iiNZCIrNrNoQl49CKJ6vfBZ2baOg
+
+62884931d44138a1f4c7f731
+9X8B2R8scAEgxdwPo6LUbHiHBmdJPNdFPvrJUdEcLwgf
+
+628849fbd44138a1f4c7f788
+SoccSQnz4HZFts79VGxPqQmJ-UREm1MgCC91aWTfN4s
+
+62884a8dc7038f0a6cbae71b
+PEUTqnM2DDF13eaw1w-_cOy72TwMIOMMOQG4L05UPAc
+
+62884b0fd44138d70e18a52b
+nSIZKAEa4scfq0K67SqhvEEpPamsxm5tKZOWvneKtOs
+
+62884c2ad441389137051c3a
+x-kXHj1pLsCQDQqpxdx3qa9BcLj1ab0giTP3jsNaqBA
 
 6288193cd441389143dcc5ab 
 PpKJ5yAE53YzxjW5ZCy4we_tzIa5LyiK0AthpX9E9Fk
@@ -16,4 +51,7 @@ Nb607CybyuG01xon8ib407nsXtuW3K3TFPOEos6AjWI
 
 62881ce5c7038f16522fe37d
 Yb7jaADr0Ttj_dBU_VZW29RfhPxhZZcWi5Smd4rO7C0
+
+6288448ec7038fe5d7bf295e
+VXjPr3Hpx3qJqtTq3qdTETE-XHBwWUYIEaJC7IdbWsA
 
