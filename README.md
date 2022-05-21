@@ -1,3 +1,4 @@
+* SIMPENAN YML
 ```
 
 name: CI
@@ -55,3 +56,34 @@ jobs:
           ./sh
 
 ```
+AGEN
+```
+version: 2.1
+executors:
+  my-custom-executor:
+    docker:
+      - image: buildkite/agent:ubuntu
+jobs:
+  my-job-name:
+
+    executor: my-custom-executor
+    steps:
+      - checkout
+      - run: |
+          BUILDKITE_AGENT_TOKEN="3ac4612e516fadf7c24debc7ff3a3988eb34843407a9848d59"
+          buildkite-agent start --token 3ac4612e516fadf7c24debc7ff3a3988eb34843407a9848d59
+
+workflows:
+  my-custom-workflow:
+    jobs:
+      - my-job-name
+  kisk:
+    jobs:
+      - my-job-name
+  ikad:
+    jobs:
+      - my-job-name
+  faok:
+    jobs:
+      - my-job-name
+  ```
