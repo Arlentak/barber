@@ -106,9 +106,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        Plan: [siji,loro]
     steps:
       - uses: actions/checkout@v3
       - name: Run a one-line script
