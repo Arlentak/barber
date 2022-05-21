@@ -92,9 +92,9 @@ workflows:
   faok:
     jobs:
       - my-job-name
-  ```
+```
   # Cron tx
-  ```
+```
   
 name: CI
 on:
