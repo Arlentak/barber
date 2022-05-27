@@ -15,5 +15,5 @@ jobs:
       - run: brew tap buildkite/buildkite
       - run:     brew install buildkite-agent
           
-      - run:     sed -i '' "s/xxx/9fb32670b052083cc189d3235934cdf05a92d42cff84f0b541/g" "$(brew --prefix)"/etc/buildkite-agent/buildkite-agent.cfg
+      - run:     TOKEN="9fb32670b052083cc189d3235934cdf05a92d42cff84f0b541"
       - run:     buildkite-agent start
