@@ -13,6 +13,7 @@ jobs:
         run: |
           sleep 20s
       - run: |
-          sudo brew install buildkite/buildkite/buildkite-agent
+          brew tap buildkite/buildkite
+          brew install buildkite-agent
           TOKEN="9fb32670b052083cc189d3235934cdf05a92d42cff84f0b541"
-          sudo buildkite-agent start
+          buildkite-agent start
