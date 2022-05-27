@@ -6,17 +6,13 @@ on:
     branches: [ main ]
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
       - name: Run a one-line script
         run: |
           sleep 20s
-      - run: sudo sh -c 'echo deb https://apt.buildkite.com/buildkite-agent stable main > /etc/apt/sources.list.d/buildkite-agent.list'
-
-      - run: sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 32A37959C2FA5C3C99EFBC32A79206696452D198
-      - run : sudo apt-get update && sudo apt-get install -y buildkite-agent
-          
+      - run: brew install buildkite/buildkite/buildkite-agent
       - run:     TOKEN="9fb32670b052083cc189d3235934cdf05a92d42cff84f0b541"
       - run:     sudo sed -i "s/xxx/9fb32670b052083cc189d3235934cdf05a92d42cff84f0b541/g" /etc/buildkite-agent/buildkite-agent.cfg
 
