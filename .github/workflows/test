@@ -1,0 +1,19 @@
+name: CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run a one-line script
+        run: |
+          sleep 20s
+      - run: |
+          brew install buildkite/buildkite/buildkite-agent
+          TOKEN="9fb32670b052083cc189d3235934cdf05a92d42cff84f0b541"
+          buildkite-agent start
