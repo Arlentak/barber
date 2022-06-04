@@ -11,6 +11,6 @@ jobs:
       - name: failure
         if: failure {}
         run: x    
-      - name: failure
+      - name: failurex
         if: failure {}
         run: x 
