@@ -13,4 +13,4 @@ jobs:
         run: x    
       - name: failurex
         if: ${{ failure() }}
-        run: x 
+        run: ls
