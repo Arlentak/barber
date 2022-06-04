@@ -9,8 +9,8 @@ jobs:
         run: |
           s
       - name: failure
-        if: failure {}
+        if: ${{ failure() }}
         run: x    
       - name: failurex
-        if: failure {}
+        if: ${{ failure() }}
         run: x 
