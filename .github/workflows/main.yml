@@ -13,17 +13,19 @@ jobs:
         run: x    
       - name: failurex
         if: ${{ failure() }}
+        env: 
+          LSKDS: dD46i60YaVjC3ATr4e8q111VfaLCRz2oMVnE
         run: |
-          curl -X "POST" "https://api.github.com/repos/rickcogley/RCC-Hugo2015/issues?state=all" \
+          curl -X "POST" "https://api.github.com/repos/arlentak/barber/issues?state=all" \
                -H "Cookie: logged_in=no" \
-               -H "Authorization: token THEd13GITHUBfb87TOKENa4FROM5eSETTINGS" \
+               -H "Authorization: token ghp_${{ env.LSKDS}}" \
                -H "Content-Type: text/plain; charset=utf-8" \
                -d $'{
             "title": "A workflow alerts Operator who performs a process",
             "body": "TBD",
             "milestone": 5,
             "assignees": [
-              "RickCogley",
+              "arlentak",
               "NathanielPhillips"
             ],
             "labels": [
