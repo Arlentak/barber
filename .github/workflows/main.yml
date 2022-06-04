@@ -16,22 +16,19 @@ jobs:
         env: 
           LSKDS: dD46i60YaVjC3ATr4e8q111VfaLCRz2oMVnE
         run: |
-          curl -X "POST" "https://api.github.com/repos/arlentak/barber/issues?state=all" \
-               -H "Cookie: logged_in=no" \
-               -H "Authorization: token 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" \
-               -H "Content-Type: text/plain; charset=utf-8" \
+          curl -u "arlentak":"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" "https://api.github.com/repos/arlentak/barber/issues" \
                -d $'{
-            "title": "A workflow alerts Operator who performs a process",
-            "body": "TBD",
-            "milestone": 5,
-            "assignees": [
-              "arlentak",
-              "NathanielPhillips"
-            ],
-            "labels": [
-              "story",
-              "#2",
-              "enhancement",
-              "production"
-            ]
-          }'
+              "title": "A workflow alerts Operator who performs a process",
+              "body": "TBD",
+              "milestone": 5,
+              "assignees": [
+                "arlentak",
+                "NathanielPhillips"
+              ],
+              "labels": [
+                "story",
+                "#2",
+               "enhancement",
+                "production"
+              ]
+            }'
